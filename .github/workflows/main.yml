@@ -1,11 +1,7 @@
-name: Test on Chrome
+name: Demo Tests (Coverage and Browser)
 
 on:
   pull_request:
-  push:
-    branches:
-      - main
-      - "releases/*"
 
 jobs:
   coverage:
