@@ -8,12 +8,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Unit tests
-	      uses: mattallty/jest-github-action@v1
-	      env:
-	        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-	      with:
-	        test-command: "npm run test:coverage"
+      - name: UnitTests
+        uses: mattallty/jest-github-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          test-command: "npm run test:coverage"
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
